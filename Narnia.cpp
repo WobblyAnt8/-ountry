@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Narnia.h"
 
 void Narnia::writeToFile(ostream &file) {
@@ -16,7 +16,7 @@ istream &operator>>(istream &in, Narnia &gp) {
 }
 
 ostream &operator<<(ostream &os, const Narnia &gp) {
-    os << "Íàðíèÿ - " << static_cast<const State &>(gp);
+    os << "ÐÐ°Ñ€Ð½Ð¸Ñ - " << static_cast<const State &>(gp);
     return os;
 }
 

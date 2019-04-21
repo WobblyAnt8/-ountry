@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Oz.h"
 
 void Oz::writeToFile(ostream &file) {
@@ -16,7 +16,7 @@ istream &operator>>(istream &in, Oz &zx) {
 }
 
 ostream &operator<<(ostream &os, const Oz &zx) {
-	os << "Ñòðàíà Îç - " << static_cast<const State &>(zx);
+	os << "Ð¡Ñ‚Ñ€Ð°Ð½Ð° ÐžÐ· - " << static_cast<const State &>(zx);
 	return os;
 }
 

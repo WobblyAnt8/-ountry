@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Atlanta.h"
 
 void Atlanta::writeToFile(ostream &file) {
@@ -16,7 +16,7 @@ istream &operator>>(istream &in, Atlanta &qa) {
 }
 
 ostream &operator<<(ostream &os, const Atlanta &qa) {
-	os << "Àòëàíòèäà - " << static_cast<const State &>(qa);
+	os << "ÐÑ‚Ð»Ð°Ð½Ñ‚Ð¸Ð´Ð° - " << static_cast<const State &>(qa);
 	return os;
 }
 

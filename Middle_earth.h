@@ -1,4 +1,4 @@
-#ifndef TP_Middle_earth_H
+﻿#ifndef TP_Middle_earth_H
 #define TP_Middle_earth_H
 
 #include "State.h"

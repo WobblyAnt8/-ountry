@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Middle_earth.h"
 
 void Middle_earth::writeToFile(ostream &file) {
@@ -16,7 +16,7 @@ istream &operator >> (istream &in, Middle_earth &p) {
 }
 
 ostream &operator<<(ostream &os, const Middle_earth &p) {
-	os << "Ñðåäèçåìüå - " << static_cast<const State &>(p);
+	os << "Ð¡Ñ€ÐµÐ´Ð¸Ð·ÐµÐ¼ÑŒÐµ - " << static_cast<const State &>(p);
 	return os;
 }
 

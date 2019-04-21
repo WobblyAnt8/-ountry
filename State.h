@@ -1,4 +1,4 @@
-#ifndef TP_State_H
+﻿#ifndef TP_State_H
 #define TP_State_H
 
 #include <string>

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "State.h"
 
 using namespace std;
@@ -89,9 +89,9 @@ State::State(const string &name, const string &flag, const string &capital, cons
 	climate(climate), magic(magic), races(races), beasts(beasts) {}
 
 ostream &operator<<(ostream &os, const State &state) {
-	os << "Íàçàâàíèå: " << state.name << ", Îïèñàíèå ôëàãà: " << state.flag << ", Ñòîëèöà: " << state.capital 
-		<< ", Ãëàâà ãîñóäàðñòâà: " << state.king << ", Ïåðâîèñòî÷íèê: " << state.origin << ", Êëèìàò: " << state.climate 
-		<< ", Íàëè÷èå âîëøåáñòâà: " << state.magic << ", Ïðîæèâàþùèå ðàñû: " << state.races << ", Ìèôè÷åñêèå ñóùåñòâà: " << state.beasts 
+	os << "ÐÐ°Ð·Ð°Ð²Ð°Ð½Ð¸Ðµ: " << state.name << ", ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ñ„Ð»Ð°Ð³Ð°: " << state.flag << ", Ð¡Ñ‚Ð¾Ð»Ð¸Ñ†Ð°: " << state.capital 
+		<< ", Ð“Ð»Ð°Ð²Ð° Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°: " << state.king << ", ÐŸÐµÑ€Ð²Ð¾Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº: " << state.origin << ", ÐšÐ»Ð¸Ð¼Ð°Ñ‚: " << state.climate 
+		<< ", ÐÐ°Ð»Ð¸Ñ‡Ð¸Ðµ Ð²Ð¾Ð»ÑˆÐµÐ±ÑÑ‚Ð²Ð°: " << state.magic << ", ÐŸÑ€Ð¾Ð¶Ð¸Ð²Ð°ÑŽÑ‰Ð¸Ðµ Ñ€Ð°ÑÑ‹: " << state.races << ", ÐœÐ¸Ñ„Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð°: " << state.beasts 
 		<< endl << "---------------";
     return os;
 }
@@ -133,31 +133,31 @@ void State::readFromFile(istream &file) {
 }
 
 istream &operator>>(istream &in, State &state) {
-	cout << "Íàçâàíèå:" << endl;
+	cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ:" << endl;
 	string name;
 	in >> name;
-    cout << "Îïèñàíèå ôëàãà:" << endl;
+    cout << "ÐžÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ Ñ„Ð»Ð°Ð³Ð°:" << endl;
     string flag;
     in >> flag;
-    cout << "Ñòîëèöà:" << endl;
+    cout << "Ð¡Ñ‚Ð¾Ð»Ð¸Ñ†Ð°:" << endl;
     string capital;
     in >> capital;
-    cout << "Ãëàâà ãîñóäàðñòâà:" << endl;
+    cout << "Ð“Ð»Ð°Ð²Ð° Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°:" << endl;
     string king;
     in >> king;
-	cout << "Ïåðâîèñòî÷íèê:" << endl;
+	cout << "ÐŸÐµÑ€Ð²Ð¾Ð¸ÑÑ‚Ð¾Ñ‡Ð½Ð¸Ðº:" << endl;
 	string origin;
 	in >> origin;
-	cout << "Êëèìàò:" << endl;
+	cout << "ÐšÐ»Ð¸Ð¼Ð°Ñ‚:" << endl;
 	string climate;
 	in >> climate;
-	cout << "Íàëè÷èå âîëøåáñòâà (1/0):" << endl;
+	cout << "ÐÐ°Ð»Ð¸Ñ‡Ð¸Ðµ Ð²Ð¾Ð»ÑˆÐµÐ±ÑÑ‚Ð²Ð° (1/0):" << endl;
 	bool magic;
 	in >> magic;
-	cout << "Ïðîæèâàþùèå ðàñû:" << endl;
+	cout << "ÐŸÑ€Ð¾Ð¶Ð¸Ð²Ð°ÑŽÑ‰Ð¸Ðµ Ñ€Ð°ÑÑ‹:" << endl;
 	string races;
 	in >> races;
-	cout << "Ìèôè÷åñêèå ñóùåñòâà:" << endl;
+	cout << "ÐœÐ¸Ñ„Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð°:" << endl;
 	string beasts;
 	in >> beasts;
 
