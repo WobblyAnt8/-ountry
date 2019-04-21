@@ -16,4 +16,4 @@ public:
 	friend istream &operator >> (istream &in, Westeros &sc);
 };
 
-#endif //TP_Westeros_H
+#endif //TP_Westeros_H 

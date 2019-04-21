@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Westeros.h"
 
 void Westeros::writeToFile(ostream &file) {
@@ -14,7 +14,7 @@ istream &operator >> (istream &in, Westeros &sc) {
 	return in;
 }
 ostream &operator<<(ostream &os, const Westeros &sc) {
-	os << "Âåñòåðîñ - " << static_cast<const State &>(sc);
+	os << "Ð’ÐµÑÑ‚ÐµÑ€Ð¾Ñ - " << static_cast<const State &>(sc);
 	return os;
 }
 
